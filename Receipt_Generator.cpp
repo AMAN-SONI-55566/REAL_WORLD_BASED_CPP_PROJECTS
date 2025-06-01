@@ -48,6 +48,11 @@ int main()
     {
         cout << left << setw(20) << item.first << right << setw(10) << fixed << setprecision(2) << item.second << "\n";
         total += item.second;
+
+        // if using separate vectors for names and prices, it would look like this:
+        // cout << left << setw(20) << items[i] << right << setw(10) << fixed << setprecision(2) << prices[i] << "\n";
+        // total += prices[i];
+       
     }
 
     double gst = total * 0.18;
@@ -55,6 +60,18 @@ int main()
     cout << left << setw(20) << "Total" << right << setw(10) << total << "\n";
     cout << left << setw(20) << "GST (18%)" << right << setw(10) << gst << "\n";
     cout << left << setw(20) << "Final Amount" << right << setw(10) << (total + gst) << "\n";
+    cout << "--------------------------\n";
+    cout << "Thank you for shopping with us!\n";
+    cout << "Have a great day!\n";
+
+    // if using separate vectors for names and prices, we would print the total like this:
+    // cout << left << setw(20) << "Total" << right << setw(10) << fixed << setprecision(2) << total << "\n";
+    // cout << "--------------------------\n";
+    // cout << "Thank you for shopping with us!\n";
+    // cout << "Have a great day!\n";
+    // cout << "--------------------------\n";
+    // if using separate vectors for names and prices, we would print the final amount like this:
+    // cout << "Final Amount: " << fixed << setprecision(2) << (total + gst) << "\n";
 
     return 0;
 }
