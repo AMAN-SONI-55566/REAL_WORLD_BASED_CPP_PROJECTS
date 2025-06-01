@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     const int numSubjects = 5;
     int marks[numSubjects];
     int total = 0;
@@ -10,7 +11,8 @@ int main() {
 
     // Input marks
     cout << "Enter marks for 5 subjects (out of 100):\n";
-    for (int i = 0; i < numSubjects; i++) {
+    for (int i = 0; i < numSubjects; i++)
+    {
         cout << "Subject " << (i + 1) << ": ";
         cin >> marks[i];
 
@@ -21,9 +23,10 @@ int main() {
         }
 
         total += marks[i];
-        if (marks[i] < 35) {
+        if (marks[i] < 35)
+        {
             pass = false; // If any subject is below 35, it's a fail
-            cout<<"Subject " << (i + 1) << " is below passing marks. You are considered failed in this subject.\n";
+            cout << "Subject " << (i + 1) << " is below passing marks. You are considered failed in this subject.\n";
         }
     }
 
@@ -33,19 +36,26 @@ int main() {
     // Display results
     cout << "\nAverage Marks: " << average << endl;
 
-    if (pass) {
+    if (pass)
+    {
         cout << "Status: Pass\n";
 
         // Assign grade
-        if (average >= 75) {
+        if (average >= 75)
+        {
             cout << "Grade: A\n";
-        } else if (average >= 60) {
+        }
+        else if (average >= 60)
+        {
             cout << "Grade: B\n";
-        } else {
+        }
+        else
+        {
             cout << "Grade: C\n";
         }
-
-    } else {
+    }
+    else
+    {
         cout << "Status: Fail\n";
         cout << "Grade: Fail\n";
     }
