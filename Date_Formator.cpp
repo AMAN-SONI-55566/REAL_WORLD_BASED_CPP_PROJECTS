@@ -2,14 +2,15 @@
 #include <string>
 using namespace std;
 
-int main() {
+int main()
+{
     string date;
     cout << "Enter date in DDMMYYYY format: ";
     cin >> date;
 
     // Array of month names
-    string months[12] = { "January", "February", "March", "April", "May", "June",
-                          "July", "August", "September", "October", "November", "December" };
+    string months[12] = {"January", "February", "March", "April", "May", "June",
+                         "July", "August", "September", "October", "November", "December"};
 
     // Extract parts from the input string
     string day = date.substr(0, 2);
@@ -20,9 +21,12 @@ int main() {
     int month = stoi(monthStr);
 
     // Validate month range
-    if (month >= 1 && month <= 12) {
+    if (month >= 1 && month <= 12)
+    {
         cout << day << " " << months[month - 1] << " " << year << endl;
-    } else {
+    }
+    else
+    {
         cout << "Invalid month!" << endl;
     }
 
