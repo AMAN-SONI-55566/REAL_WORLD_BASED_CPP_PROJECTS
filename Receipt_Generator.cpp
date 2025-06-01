@@ -64,14 +64,5 @@ int main()
     cout << "Thank you for shopping with us!\n";
     cout << "Have a great day!\n";
 
-    // if using separate vectors for names and prices, we would print the total like this:
-    // cout << left << setw(20) << "Total" << right << setw(10) << fixed << setprecision(2) << total << "\n";
-    // cout << "--------------------------\n";
-    // cout << "Thank you for shopping with us!\n";
-    // cout << "Have a great day!\n";
-    // cout << "--------------------------\n";
-    // if using separate vectors for names and prices, we would print the final amount like this:
-    // cout << "Final Amount: " << fixed << setprecision(2) << (total + gst) << "\n";
-
     return 0;
 }
