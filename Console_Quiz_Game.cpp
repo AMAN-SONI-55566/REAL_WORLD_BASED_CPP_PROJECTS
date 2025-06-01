@@ -48,7 +48,7 @@ int main() {
     cout << "Welcome to the India Quiz! Please select A, B, C, or D for each question.\n\n";
 
     int score = 0;
-
+    // Loop through each question in the quiz
     for (int i = 0; i < static_cast<int>(quiz.size()); ++i) {
         cout << "Q" << (i + 1) << ": ";
         char answer = askQuestion(quiz[i]);
